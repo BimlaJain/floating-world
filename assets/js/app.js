@@ -18,6 +18,21 @@ document.querySelectorAll('input[name="plan"]').forEach((radio) => {
     });
 });
 
+// tab
+document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+        let category = button.getAttribute('data-category');
+        document.querySelectorAll('.project-item').forEach(item => {
+            if (item.getAttribute('data-category') === category) {
+                item.style.display = 'block';
+                item.querySelector('.project-name').innerText = category;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
 // faq
 function toggleAccordion(button) {
     let content = button.nextElementSibling;
