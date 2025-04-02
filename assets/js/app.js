@@ -34,3 +34,11 @@ function toggleAccordion(button) {
         icon.classList.add('rotate-180');
     }
 }
+
+// aos
+AOS.init({
+    duration: 2000, 
+    once: true,   
+    delay: 200,   
+});
+

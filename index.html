@@ -7,6 +7,9 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="shortcut icon" href="assets/images/png/short-logo.png" type="image/x-icon">
+        <!-- AOS CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
         <!-- Primary Meta Tags -->
         <title>Floating World</title>
         <meta name="title" content="Floating World" />
@@ -55,7 +58,7 @@
                         class="font-medium lg:text-[26px] md:text-2xl text-xl pt-3 pb-10 text-white text-center relative z-10">
                         Monthly web maintenance packages for businesses. Cancel anytime</p>
                     <button
-                        class="text-xl flex justify-center items-center mx-auto md:w-[193px] md:h-[67px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] cursor-pointer">See
+                        class="text-xl flex justify-center items-center mx-auto md:w-[193px] md:h-[67px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] cursor-pointer hover:text-[#00AFE1] transition-all duration-500 ease-linear">See
                         Plans</button>
                     <div class="flex justify-center items-center gap-[13px] pt-[21px]">
                         <div class="bg-[#FF0000] rounded-full size-3"></div>
@@ -127,18 +130,18 @@
                 </div>
             </header>
             <div id="mobile-menu"
-                class="fixed inset-0 bg-white hidden flex flex-col z-20 items-center justify-center gap-4">
+                class="fixed inset-0 bg-white hidden flex flex-col z-40 items-center justify-center gap-4">
                 <button id="close-btn" class="text-black mb-8 mr-7 absolute bottom-0 right-0 text-3xl">✖</button>
-                <a href="#" class="text-black text-xl font-medium">How it works</a>
-                <a href="#" class="text-black text-xl font-medium">Benefits</a>
-                <a href="#" class="text-black text-xl font-medium">Services</a>
-                <a href="#" class="text-black text-xl font-medium">Pricing</a>
-                <a href="#" class="text-black text-xl font-medium">FAQs</a>
+                <a href="#works" class="text-black text-xl font-medium">How it works</a>
+                <a href="#benefit" class="text-black text-xl font-medium">Benefits</a>
+                <a href="#service" class="text-black text-xl font-medium">Services</a>
+                <a href="#pricing" class="text-black text-xl font-medium">Pricing</a>
+                <a href="#faq" class="text-black text-xl font-medium">FAQs</a>
             </div>
         </section>
 
         <!-- marquee of project -->
-        <section>
+        <section  id="works">
             <div class="relative -z-10 lg:pt-[106px] md:pt-20 pt-10 overflow-hidden">
                 <div class="flex space-x-4 animate-scroll whitespace-nowrap">
                     <div class="relative md:w-[476px] w-[270px] flex-shrink-0">
@@ -225,20 +228,20 @@
                     Website
                     Scaling, Maintenance, & AI Integration</p>
                 <div class="flex max-lg:flex-wrap lg:items-start items-center lg:justify-between justify-center">
-                    <div class="flex flex-col justify-center items-center">
+                    <div data-aos="zoom-in" class="flex flex-col justify-center items-center">
                         <img src="assets/images/png/subscribe.png" alt="subscribe"
                             class="size-[132px] lg:pb-[41px] pb-7">
                         <p class="font-medium md:text-[22px] text-lg leading-[32px] max-w-[354px] mx-auto text-center">
                             Subscribe for monthly proactive web maintenance</p>
                     </div>
-                    <div class="flex flex-col justify-center items-center max-md:mt-8">
+                    <div data-aos="zoom-out" class="flex flex-col justify-center items-center max-md:mt-8">
                         <img src="assets/images/png/growth.png" alt="subscribe"
                             class="w-[123px] h-[131px] lg:pb-[41px] pb-7">
                         <p class="font-medium md:text-[22px] text-lg leading-[32px] max-w-[376px] mx-auto text-center">
                             Receive web & e-commerce optimization, traffic scaling, security & server cost management
                         </p>
                     </div>
-                    <div class="flex flex-col justify-center items-center max-lg:mt-8">
+                    <div data-aos="zoom-in" class="flex flex-col justify-center items-center max-lg:mt-8">
                         <img src="assets/images/png/quality.png" alt="subscribe"
                             class="w-[117px] h-[140px] lg:pb-[41px] pb-7">
                         <p class="font-medium md:text-[22px] text-lg leading-[32px] max-w-[354px] mx-auto text-center">
@@ -246,7 +249,7 @@
                     </div>
                 </div>
                 <button
-                    class="text-xl flex justify-center items-center mx-auto md:w-[193px] md:h-[67px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] lg:mt-[78px] md:mt-12 mt-7 cursor-pointer">See
+                    class="text-xl flex justify-center items-center mx-auto md:w-[193px] md:h-[67px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] lg:mt-[78px] md:mt-12 mt-7 cursor-pointer hover:text-[#00AFE1] transition-all duration-500 ease-linear">See
                     Plans</button>
             </div>
         </section>
@@ -267,23 +270,24 @@
 
         <!-- go back -->
         <section class="lg:pt-[110px] lg:pb-[119px] md:py-20 py-10 bg-[#F5F5F5] relative -z-10">
-            <h3
-                class="font-extrabold lg:text-[67px] md:text-5xl text-4xl max-w-[614px] mx-auto text-center lg:pb-[33px] md:pb-7 pb-5">
-                It’s “you’ll never go back” better</h3>
-            <p
-                class="lg:text-[26px] md:text-2xl text-xl font-medium lg:leading-[36px] max-w-[700px] mx-auto text-center">
-                Floatingworld replaces unreliable freelancers and expensive agencies for one flat monthly fee, with
-                unwavering
-                (fanatical?) support that will blow your mind.</p>
-            <button
-                class="text-xl flex justify-center items-center mx-auto md:w-[193px] md:h-[67px] cursor-pointer font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] lg:mt-[72px] md:mt-12 mt-7 cursor-pointer">See
-                Plans</button>
-            <img src="assets/images/png/down-arrow.png" alt="down-arrow"
-                class="absolute bottom-[-15%] left-[70%] md:block hidden animate-bounce">
+            <div class="container mx-auto px-4 ">
+                <h3
+                    class="font-extrabold lg:text-[67px] md:text-5xl text-4xl max-w-[614px] mx-auto text-center lg:pb-[33px] md:pb-7 pb-5">
+                    It’s “you’ll never go back” better</h3>
+                <p class="lg:text-[26px] md:text-2xl text-xl font-medium lg:leading-[36px] max-w-[700px] mx-auto text-center">
+                    Floatingworld replaces unreliable freelancers and expensive agencies for one flat monthly fee, with
+                    unwavering
+                    (fanatical?) support that will blow your mind.</p>
+                <button
+                    class="text-xl flex justify-center items-center mx-auto md:w-[193px] md:h-[67px] cursor-pointer font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] lg:mt-[72px] md:mt-12 mt-7 hover:text-[#00AFE1] transition-all duration-500 ease-linear relative z-30">See
+                    Plans</button>
+                <img src="assets/images/png/down-arrow.png" alt="down-arrow"
+                    class="absolute bottom-[-15%] left-[70%] md:block hidden animate-bounce">
+            </div>
         </section>
 
         <!-- stress free -->
-        <section class="lg:pt-[133px] lg:pb-[138px] md:py-20 py-10">
+        <section id="service" class="lg:pt-[133px] lg:pb-[138px] md:py-20 py-10">
             <div class="container max-w-[1260px] mx-auto px-4">
                 <div class="flex max-lg:flex-wrap lg:justify-between justify-center items-center">
                     <div
@@ -328,19 +332,19 @@
         </section>
 
         <!-- membership benefits -->
-        <section class="lg:pt-[131px] lg:pb-[123px] md:py-20 py-10 bg-[#F5F5F5]">
+        <section id="benefit" class="lg:pt-[131px] lg:pb-[123px] md:py-20 py-10 bg-[#F5F5F5]">
             <div class="container mx-auto px-4">
                 <h3 class="font-extrabold lg:text-[67px] md:text-5xl text-4xl  text-center lg:pb-[79px] md:pb-10 pb-8">
                     Membership Benefits</h3>
                 <div class="flex flex-wrap lg:justify-between items-center justify-center">
-                    <div class="flex flex-col items-center justify-center max-md:pb-7 max-sm:pb-5">
+                    <div data-aos="zoom-in" class="flex flex-col items-center justify-center max-md:pb-7 max-sm:pb-5">
                         <img src="assets/images/png/forget.png" alt="forget"
                             class="w-[174px] lg:pb-[50px] md:pb-7 pb-5">
                         <h4 class="font-bold lg:text-[26px] md:text-2xl text-xl">Set it and forget it</h4>
                         <p class="font-medium md:text-lg text-base md:pt-[17px] pt-2 max-w-[308px] text-center">We pay
                             fanatical attention to your website so you don't have to.</p>
                     </div>
-                    <div class="flex flex-col items-center justify-center max-md:pb-7 max-sm:pb-5">
+                    <div data-aos="zoom-out" class="flex flex-col items-center justify-center max-md:pb-7 max-sm:pb-5">
                         <img src="assets/images/png/coverage.png" alt="coverage"
                             class="w-[148px] lg:pb-[35px] md:pb-6 pb-5">
                         <h4 class="font-bold lg:text-[26px] md:text-2xl text-xl">Full coverage</h4>
@@ -349,7 +353,7 @@
                             We take care of it all: website & server updates, security, traffic spikes, & e-commerce
                             optimization..</p>
                     </div>
-                    <div class="flex flex-col items-center justify-center ">
+                    <div data-aos="zoom-in" class="flex flex-col items-center justify-center ">
                         <img src="assets/images/png/rate.png" alt="rate" class="w-[162px] lg:pb-[33px] md:pb-6 pb-5">
                         <h4 class="font-bold lg:text-[26px] md:text-2xl text-xl">Fixed monthly rate</h4>
                         <p
@@ -357,7 +361,7 @@
                             No surprises here! We enable you take control of your annual web budget with a fixed monthly
                             retainer.</p>
                     </div>
-                    <div class="flex flex-col items-center justify-center lg:pt-[86px] md:pt-12 pt-8">
+                    <div data-aos="zoom-out" class="flex flex-col items-center justify-center lg:pt-[86px] md:pt-12 pt-8">
                         <img src="assets/images/png/flexible.png" alt="flexible"
                             class="w-[121px] lg:pb-[43px] md:pb-7 pb-5">
                         <h4 class="font-bold lg:text-[26px] md:text-2xl text-xl">Flexible and Scalable</h4>
@@ -367,14 +371,14 @@
                             the best framework for your
                             needs</p>
                     </div>
-                    <div class="flex flex-col items-center justify-center lg:pt-[86px] md:pt-12 pt-8">
+                    <div data-aos="zoom-in" class="flex flex-col items-center justify-center lg:pt-[86px] md:pt-12 pt-8">
                         <img src="assets/images/png/ai.png" alt="ai" class="w-[143px] lg:pb-[26px] md:pb-7 pb-5">
                         <h4 class="font-bold lg:text-[26px] md:text-2xl text-xl">Harness the Power of AI</h4>
                         <p
                             class="font-medium md:text-lg text-base md:pt-[17px] pt-2 xl:max-w-[384px] md:max-w-[300px] w-full text-center">
                             Stay ahead of the competition by integrating AI into your business operations.</p>
                     </div>
-                    <div class="flex flex-col items-center justify-center lg:pt-[86px] md:pt-12 pt-8">
+                    <div data-aos="zoom-out" class="flex flex-col items-center justify-center lg:pt-[86px] md:pt-12 pt-8">
                         <img src="assets/images/png/wordpress.png" alt="forget"
                             class="w-[133px] lg:pb-[38px] md:pb-7 pb-5">
                         <h4 class="font-bold lg:text-[26px] md:text-2xl text-xl">Wordpress experts</h4>
@@ -392,32 +396,32 @@
                 <h2 class="lg:text-[67px] md:text-5xl text-center text-4xl font-extrabold mt-7 lg:leading-[72px] lg:pb-[109px] md:pb-20 pb-10">
                     App, web, & AI coding</h2>
                     <div class="flex lg:pb-[100px] md:pb-12 pb-8 gap-3 max-w-[953px] flex-wrap justify-center items-center mx-auto">
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[153px] h-[53px] text-white">Mobile Apps </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[72px] h-[53px] text-white">AI
+                        <button data-aos="fade-in" class="rounded-full bg-[#00AFE1] hover:text-black transition-all duration-500 ease-linear flex justify-center items-center w-[153px] h-[53px] text-white">Mobile Apps </button>
+                        <button data-aos="zoom-in" class="rounded-full bg-[#00AFE1] hover:text-black transition-all duration-500 ease-linear flex justify-center items-center w-[72px] h-[53px] text-white">AI
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[164px] h-[53px] text-white">Plugin Coding
+                        <button data-aos="zoom-out" class="rounded-full bg-[#00AFE1] hover:text-black transition-all duration-500 ease-linear flex justify-center items-center w-[164px] h-[53px] text-white">Plugin Coding
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[151px] h-[53px] text-white">Web Coding
+                        <button data-aos="fade-out" class="rounded-full bg-[#00AFE1] hover:text-black transition-all duration-500 ease-linear flex justify-center items-center w-[151px] h-[53px] text-white">Web Coding
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[147px] h-[53px] text-white">Server-side
+                        <button data-aos="zoom-in" class="rounded-full bg-[#00AFE1] hover:text-black transition-all duration-500 ease-linear flex justify-center items-center w-[147px] h-[53px] text-white">Server-side
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[121px] h-[53px] text-white">Security
+                        <button data-aos="zoom-out" class="rounded-full bg-[#00AFE1] hover:text-black transition-all duration-500 ease-linear flex justify-center items-center w-[121px] h-[53px] text-white">Security
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[123px] h-[53px] text-white">Backups
+                        <button data-aos="fade-in" class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[123px] h-[53px] text-white">Backups
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[158px] h-[53px] text-white">Management
+                        <button data-aos="fade-out" class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[158px] h-[53px] text-white">Management
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[141px] h-[53px] text-white">Wordpress
+                        <button data-aos="zoom-in" class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[141px] h-[53px] text-white">Wordpress
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[112px] h-[53px] text-white">Laravel
+                        <button data-aos="zoom-out" class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[112px] h-[53px] text-white">Laravel
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[150px] h-[53px] text-white">Integrations
+                        <button data-aos="fade-in" class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[150px] h-[53px] text-white">Integrations
                         </button>
-                        <button class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[209px] h-[53px] text-white">Speed Optimization
+                        <button data-aos="fade-out" class="rounded-full bg-[#00AFE1] flex justify-center items-center w-[209px] h-[53px] text-white">Speed Optimization
                         </button>
                     </div>
                     <div class="flex gap-[30px] justify-center items-center flex-wrap relative -z-10">
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
                             <img src="/assets/images/png/agile.png" alt="Project 1" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -425,7 +429,7 @@
                             </div>
                         </div>
                     
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
                             <img src="/assets/images/png/mike.png" alt="Project 2" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -433,7 +437,7 @@
                             </div>
                         </div>
                     
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
                             <img src="/assets/images/png/monalisa.png" alt="Project 3" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -441,14 +445,14 @@
                             </div>
                         </div>
                     
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px] ">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px] ">
                             <img src="/assets/images/png/mountain.png" alt="Project 4" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
                                 <p class="text-white font-medium md:text-lg text-sm">Launch Date</p>
                             </div>
                         </div>
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px] ">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px] ">
                             <img src="/assets/images/png/building.png" alt="Project 1" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -456,7 +460,7 @@
                             </div>
                         </div>
                     
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
                             <img src="/assets/images/png/drink.png" alt="Project 2" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -464,7 +468,7 @@
                             </div>
                         </div>
                     
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px] ">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px] ">
                             <img src="/assets/images/png/doctor.png" alt="Project 3" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -472,14 +476,15 @@
                             </div>
                         </div>
                     
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
                             <img src="/assets/images/png/reading-book.png" alt="Project 4" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
                                 <p class="text-white font-medium md:text-lg text-sm">Launch Date</p>
                             </div>
                         </div>
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
+
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
                             <img src="/assets/images/png/racer.png" alt="Project 2" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -487,7 +492,7 @@
                             </div>
                         </div>
                         
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px] ">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px] ">
                             <img src="/assets/images/png/machine.png" alt="Project 3" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -495,7 +500,7 @@
                             </div>
                         </div>
                         
-                        <div class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
+                        <div data-aos="zoom-in" class="relative 2xl:w-[476px] xl:w-[380px] w-[270px]">
                             <img src="/assets/images/png/night-building.png" alt="Project 4" class="w-full h-full object-cover rounded-xl">
                             <div class="absolute bottom-0 bg-black/50 w-full xl:pt-6 xl:pb-9 xl:pl-9 p-3 rounded-b-xl">
                                 <h3 class="text-white font-bold md:text-[22px] text-lg">Project Name</h3>
@@ -504,13 +509,12 @@
                         </div>
                     </div>
                     <button
-                        class="text-xl flex mx-auto lg:mt-[77px] md:mt-14 mt-10 justify-center items-center md:w-[276px] md:h-[91px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] cursor-pointer whitespace-nowrap">Book
-                        call</button>
+                        class="text-xl flex mx-auto lg:mt-[77px] md:mt-14 mt-10 justify-center items-center md:w-[319px] md:h-[67px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] cursor-pointer whitespace-nowrap  border-black hover:text-[#00AFE1] transition-all duration-500 ease-linear">Download Case Studies</button>
             </div>
          </section>
 
         <!-- join floating world -->
-        <section class="lg:pt-[261px] md:pt-20 pt-10 bg-[#F5F5F5]">
+        <section id="pricing" class="lg:pt-[261px] md:pt-20 pt-10 bg-[#F5F5F5]">
             <div class="container px-4 mx-auto">
                 <div class="flex flex-col lg:flex-row gap-6 ">
                     <div class="bg-[#222222] text-white md:py-16 md:px-10 p-8 rounded-[24px] lg:w-[476px] w-full">
@@ -530,7 +534,7 @@
                                 <p class="pt-2 font-medium lg:text-lg text-base max-w-[294px]">Learn how Floatingworld works and how
                                     it can help you</p>
                             </div>
-                            <img src="assets/images/svg/right-arrow.svg" alt="right-arrow" class="size-[30px]">
+                            <img src="assets/images/svg/right-arrow.svg" alt="right-arrow" class="size-[30px] hover:translate-x-1 cursor-pointer transition-all duration-500 ease-linear">
                         </div>
                     <div class="bg-black mt-5 rounded-[13px] pt-5 pb-7 pl-7 pr-7 md: w-fullw-[394px] flex justify-center items-center">
                         <div class="flex flex-col justify-start items-start">
@@ -539,7 +543,7 @@
                             </button>
                             <p class="pt-2 font-medium lg:text-lg text-base max-w-[294px]">Earn 5% monthly recurring commissions for each referral.</p>
                         </div>
-                        <img src="assets/images/svg/right-arrow.svg" alt="right-arrow" class="size-[30px]">
+                        <img src="assets/images/svg/right-arrow.svg" alt="right-arrow" class="size-[30px] hover:translate-x-1 cursor-pointer transition-all duration-500 ease-linear">
                     </div>
                     </div>
                     <div class="bg-white xl:p-[49px] lg:p-11 md:p-9 p-5 rounded-[24px] shadow-lg w-full">
@@ -581,14 +585,14 @@
                             </ul>
                         </div>
                         <button
-                            class="text-xl flex mt-11 justify-center items-center md:w-[276px] md:h-[91px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] cursor-pointer whitespace-nowrap">Book  call</button>
+                            class="text-xl flex mt-11 justify-center items-center md:w-[276px] md:h-[91px] font-semibold py-3 px-10 rounded-[14px] hover:text-[#00AFE1] transition-all duration-500 ease-linear text-white bg-gradient-to-b from-black to-[#393939] cursor-pointer whitespace-nowrap">Book  call</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- faq -->
-        <section class="lg:pt-[189px] md:pt-20 pt-10 bg-[#F5F5F5]">
+        <section id="faq" class="lg:pt-[189px] md:pt-20 pt-10 bg-[#F5F5F5]">
             <div class="container mx-auto px-4">
                 <div class=" flex max-xl:flex-wrap xl:justify-between justify-center items-center gap-6">
                     <div>
@@ -596,7 +600,7 @@
                             class="font-extrabold lg:text-[67px] md:text-5xl text-4xl max-w-[614px] max-lg:mx-auto max-lg:text-center lg:pb-[47px] md:pb-7 pb-5">
                             Commonly asked questions</h2>
                         <div class="space-y-2">
-                            <div class="md:pb-7 pb-6">
+                            <div data-aos="fade-left" class="md:pb-7 pb-6">
                                 <button
                                     class="w-full flex justify-between text-left sm:items-center md:text-lg text-base font-medium text-gray-900"
                                     onclick="toggleAccordion(this)">
@@ -612,7 +616,7 @@
                                 </div>
                             </div>
 
-                            <div class="md:pb-7 pb-6">
+                            <div data-aos="fade-right" class="md:pb-7 pb-6">
                                 <button
                                     class="w-full flex justify-between text-left sm:items-center md:text-lg text-base font-medium text-gray-900"
                                     onclick="toggleAccordion(this)">
@@ -625,7 +629,7 @@
                                     <p class="p-4 pl-0 text-gray-700">Curabitur vulputate nec erat non gravida.</p>
                                 </div>
                             </div>
-                            <div class="md:pb-7 pb-6">
+                            <div data-aos="fade-left" class="md:pb-7 pb-6">
                                 <button
                                     class="w-full flex justify-between text-left sm:items-center md:text-lg text-base font-medium text-gray-900"
                                     onclick="toggleAccordion(this)">
@@ -641,7 +645,7 @@
                                 </div>
                             </div>
 
-                            <div class="md:pb-7 pb-6">
+                            <div data-aos="fade-right" class="md:pb-7 pb-6">
                                 <button
                                     class="w-full flex justify-between text-left sm:items-center md:text-lg text-base font-medium text-gray-900"
                                     onclick="toggleAccordion(this)">
@@ -654,7 +658,7 @@
                                     <p class="p-4 pl-0 text-gray-700">Curabitur vulputate nec erat non gravida.</p>
                                 </div>
                             </div>
-                            <div class="md:pb-7 pb-6">
+                            <div data-aos="fade-left" class="md:pb-7 pb-6">
                                 <button
                                     class="w-full flex justify-between text-left sm:items-center md:text-lg text-base font-medium text-gray-900"
                                     onclick="toggleAccordion(this)">
@@ -670,7 +674,7 @@
                                 </div>
                             </div>
 
-                            <div class="md:pb-7 pb-6">
+                            <div data-aos="fade-right" class="md:pb-7 pb-6">
                                 <button
                                     class="w-full flex justify-between text-left sm:items-center md:text-lg text-base font-medium text-gray-900"
                                     onclick="toggleAccordion(this)">
@@ -683,7 +687,7 @@
                                     <p class="p-4 pl-0 text-gray-700">Curabitur vulputate nec erat non gravida.</p>
                                 </div>
                             </div>
-                            <div class="md:pb-7 pb-6">
+                            <div data-aos="fade-left" class="md:pb-7 pb-6">
                                 <button
                                     class="w-full flex justify-between text-left sm:items-center md:text-lg text-base font-medium text-gray-900"
                                     onclick="toggleAccordion(this)">
@@ -699,7 +703,7 @@
                                 </div>
                             </div>
 
-                            <div class="md:pb-7 pb-6">
+                            <div data-aos="fade-right" class="md:pb-7 pb-6">
                                 <button
                                     class="w-full flex justify-between text-left sm:items-center md:text-lg text-base font-medium text-gray-900"
                                     onclick="toggleAccordion(this)">
@@ -725,7 +729,7 @@
                             class="lg:text-5xl md:text-4xl text-3xl lg:leading-[58px] font-bold text-gray-900 md:mb-7 mb-5">
                             Book a 15-minute intro call</h3>
                         <button
-                            class="text-xl flex justify-center items-center mx-auto md:w-[249px] md:h-[67px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] cursor-pointer whitespace-nowrap">Schedule
+                            class="text-xl flex justify-center items-center mx-auto md:w-[249px] md:h-[67px] font-semibold py-3 px-10 rounded-[14px] text-white bg-gradient-to-b from-black to-[#393939] hover:text-[#00AFE1] transition-all duration-500 ease-linear cursor-pointer whitespace-nowrap">Schedule
                             Now</button>
                         <p class=" text-black lg:pt-[61px] md:pt-14 pt-9">Prefer to email? <a
                                 href="mailto:hello@floatingworld.ca"
@@ -757,7 +761,7 @@
                 </div>
             </div>
         </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="assets/js/app.js"></script>
     </body>
 
