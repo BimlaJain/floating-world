@@ -6,6 +6,18 @@ const mobileMenu = document.getElementById('mobile-menu');
 menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
 closeBtn.addEventListener('click', () => mobileMenu.classList.add('hidden'));
 
+// toggle basic
+document.querySelectorAll('input[name="plan"]').forEach((radio) => {
+    radio.addEventListener("change", function () {
+        const priceText = document.getElementById("price");
+        if (this.id === "basic") {
+            priceText.textContent = "$600/m";
+        } else {
+            priceText.textContent = "$1200/m";
+        }
+    });
+});
+
 // faq
 function toggleAccordion(button) {
     let content = button.nextElementSibling;
