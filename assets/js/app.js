@@ -35,6 +35,80 @@ function toggleAccordion(button) {
     }
 }
 
+// lottie
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-arrow'), 
+    renderer: 'svg', 
+    loop: true,
+    autoplay: true, 
+    path: 'assets/images/json/down arrow.json' 
+});
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-man'), 
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/images/json/man.json'
+});
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-coverage'), 
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/images/json/coverage.json'
+});
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-flexible'), 
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/images/json/flexible.json'
+});
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-ai'), 
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/images/json/ai.json'
+});
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-rate'), 
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/images/json/rate.json'
+});
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-subscribe'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/images/json/subscribe.json'
+});
+
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-commerce'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/images/json/commerce.json'
+});
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-quality'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/images/json/quality.json'
+});
+
 // aos
 AOS.init({
     duration: 2000, 
