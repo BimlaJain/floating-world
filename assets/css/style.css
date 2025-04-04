@@ -18,6 +18,10 @@ body {
     animation: scroll 15s linear infinite;
 }
 
+.custom-spinner {
+    animation: slow-spin 5s linear infinite;
+}
+
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -35,5 +39,15 @@ body {
 
     to {
         transform: translateX(0);
+    }
+}
+
+@keyframes slow-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
